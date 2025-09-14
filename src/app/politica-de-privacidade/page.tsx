@@ -49,7 +49,7 @@ const PoliticaPrivacidadePage = () => {
                 <p>Empregamos medidas de segurança técnicas e organizacionais para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela internet ou armazenamento eletrônico é 100% seguro, e não podemos garantir a segurança absoluta dos seus dados.</p>
 
                 <h2>5. Retenção de Dados</h2>
-                <p>Reteremos suas informações pessoais apenas pelo tempo necessário para cumprir os propósitos descritos nesta Política de Privacidade, a menos que um período de retenção mais longo seja exigido ou permitido por lei. O conteúdo das memórias do "Plano Para Sempre" é retido indefinidamente.</p>
+                <p>Reteremos suas informações pessoais apenas pelo tempo necessário para cumprir os propósitos descritos nesta Política de Privacidade, a menos que um período de retenção mais longo seja exigido ou permitido por lei. O conteúdo das memórias do `&quot;`Plano Para Sempre`&quot;` é retido indefinidamente.</p>
 
                 <h2>6. Seus Direitos</h2>
                 <p>Você tem o direito de:</p>
@@ -65,7 +65,7 @@ const PoliticaPrivacidadePage = () => {
                 <p>Nosso serviço pode conter links para sites de terceiros que não são operados por nós. Não temos controle e não assumimos responsabilidade pelo conteúdo, políticas de privacidade ou práticas de quaisquer sites ou serviços de terceiros.</p>
 
                 <h2>8. Alterações a Esta Política de Privacidade</h2>
-                <p>Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a data de "Última atualização". Recomendamos que você revise esta Política periodicamente.</p>
+                <p>Podemos atualizar nossa Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova Política de Privacidade nesta página e atualizando a data de `&quot;`Última atualização`&quot;`. Recomendamos que você revise esta Política periodicamente.</p>
 
                 <h2>9. Contato</h2>
                 <p>Se você tiver dúvidas sobre esta Política de Privacidade ou sobre nossas práticas de dados, entre em contato conosco através de nossos canais de suporte indicados no site.</p>

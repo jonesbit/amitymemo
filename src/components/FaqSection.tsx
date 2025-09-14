@@ -4,7 +4,12 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
-const faqData = [
+interface Faq {
+  question: string;
+  answer: string;
+}
+
+const faqData: Faq[] = [
     {
         question: "O que é o AmityMemo e como ele funciona?",
         answer: "AmityMemo é uma plataforma inovadora para criar páginas de memórias digitais personalizadas. Você pode adicionar fotos, vídeos, textos e músicas para celebrar momentos especiais, aniversários, datas de namoro, ou qualquer lembrança que deseje eternizar. É um presente único e emocionante para a pessoa amada."
@@ -31,7 +36,7 @@ const faqData = [
     }
 ];
 
-const FaqItem = ({ item, isOpen, onClick }: { item: any, isOpen: boolean, onClick: () => void }) => {
+const FaqItem = ({ item, isOpen, onClick }: { item: Faq, isOpen: boolean, onClick: () => void }) => {
     return (
         <div className={`faq-item ${isOpen ? 'active' : ''}`}>
             <button className="faq-question" onClick={onClick}>
