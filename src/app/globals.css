@@ -1038,3 +1038,8 @@ ul {
     color: var(--text-primary);
     font-weight: 600;
 }
+
+.nomeElvros {
+  font-weight: bold;
+  color: #008080;
+}

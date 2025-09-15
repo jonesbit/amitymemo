@@ -45,7 +45,14 @@ const Footer = () => {
             <span className="copy">&copy; 2025 AmityMemo. Todos os direitos reservados.</span><br />
             <span className="cnpj">CNPJ: 00.000.000/0001-00</span>
           </p>
-          <p className="site-by">Feito com ❤️ por Galdeano</p>
+          <p className="site-by">
+            Feito com ❤️ por 
+            <Link href="https://elvros.com" passHref legacyBehavior>
+              <a className="nomeElvros" target="_blank" rel="noopener noreferrer">
+                Elvros
+              </a>
+            </Link>
+          </p>
           <a href="#hero" className="back-to-top">Voltar ao topo <FontAwesomeIcon icon={faArrowUp} /></a>
         </div>
       </div>
