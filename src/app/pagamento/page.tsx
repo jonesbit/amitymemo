@@ -171,7 +171,7 @@ const PagamentoPage = () => {
                 </div>
 
                 <div className={styles.formGroup}>
-                    <label className={styles.label}>Forma de pagamento</label>
+                    <label className={styles.label}>Forma dde pagamento</label>
                     <div className={styles.paymentOptions}>
                         <input type="radio" id="pix" name="paymentMethod" value="pix" checked={selectedPaymentMethod === 'pix'} onChange={() => setSelectedPaymentMethod('pix')} />
                         <label htmlFor="pix">
