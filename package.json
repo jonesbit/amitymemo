@@ -20,7 +20,7 @@
     "emoji-picker-react": "^4.9.2",
     "next": "15.5.3",
     "react": "19.1.0",
-    "react-datepicker": "^6.9.0",
+    "react-datepicker": "^8.7.0",
     "react-dom": "19.1.0",
     "stripe": "^18.5.0"
   },
