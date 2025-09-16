@@ -1,0 +1,206 @@
+.paymentPage {
+    display: flex;
+    justify-content: center;
+    padding: 120px 20px 60px 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mainContainer {
+    width: 100%;
+    max-width: 420px;
+}
+
+.summaryCard {
+    background-color: #1A1A2E;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+    border: 1px solid #2d3748;
+}
+
+.summaryIcon {
+    width: 48px;
+    height: 48px;
+    background-color: #0d1117;
+    border: 1px solid #2d3748;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px auto;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.productName {
+    color: #AAAAAA;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.priceContainer {
+    margin-bottom: 24px;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #AAAAAA;
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+.currentPrice {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F0F0F0;
+}
+
+.planSelector {
+    display: flex;
+    align-items: center;
+    background-color: #0d1117;
+    padding: 12px 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #2d3748;
+}
+
+.planIcon {
+    font-size: 1.5rem;
+    color: #00D9C0;
+    margin-right: 12px;
+}
+
+.planDetails {
+    flex-grow: 1;
+    text-align: left;
+    color: #F0F0F0;
+}
+
+.promoBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgba(0, 217, 192, 0.1);
+    color: #00D9C0;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.formGroup {
+    margin-bottom: 24px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #AAAAAA;
+    font-size: 0.9rem;
+}
+
+.input {
+    width: 100%;
+    padding: 14px 16px;
+    background-color: #1A1A2E;
+    color: #F0F0F0;
+    border-radius: 12px;
+    border: 1px solid #2d3748;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #00D9C0;
+}
+
+.paymentOptions label {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    background-color: #1A1A2E;
+    border: 1px solid #2d3748;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.paymentOptions input[type="radio"] {
+    display: none;
+}
+
+.paymentOptions input[type="radio"]:checked + label {
+    border-color: #00D9C0;
+    box-shadow: 0 0 10px rgba(0, 217, 192, 0.3);
+}
+
+.paymentIcon {
+    width: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 12px;
+    color: #AAAAAA;
+}
+
+.paymentMethodName {
+    flex-grow: 1;
+    color: #F0F0F0;
+    font-weight: 500;
+}
+
+.cardLogos {
+    display: flex;
+    gap: 6px;
+}
+
+.pixInfo .input {
+    background-color: #f0f0f0;
+    color: #0d1117;
+    font-weight: 500;
+}
+
+.securePurchase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #00D9C0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 24px 0 16px 0;
+}
+
+.legalText {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #AAAAAA;
+    margin-top: 24px;
+}
+
+.legalText a {
+    color: #F0F0F0;
+    text-decoration: underline;
+}
+
+.backButton {
+    background: none;
+    border: none;
+    color: #AAAAAA;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.errorMessage {
+    color: #ef4444;
+    margin-top: 16px;
+    text-align: center;
+    font-weight: 500;
+}

@@ -1,0 +1,46 @@
+.successPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.successCard {
+    width: 100%;
+    max-width: 420px;
+}
+
+.iconWrapper {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 0 auto 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(231, 0, 138, 0.15), rgba(0, 217, 192, 0.15));
+}
+
+.icon {
+    font-size: 2rem;
+    color: #00D9C0;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #E7008A, #00D9C0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.message {
+    color: #AAAAAA;
+    margin-bottom: 32px;
+    font-size: 1rem;
+    line-height: 1.6;
+}

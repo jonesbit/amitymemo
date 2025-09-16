@@ -1,0 +1,35 @@
+.stepIndicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #4a5568;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  background-color: #1a202c;
+  color: #a0aec0;
+}
+
+.step.active {
+  background-color: #2b6cb0;
+  border-color: #2b6cb0;
+  color: #ffffff;
+}
+
+.step.completed {
+  background-color: #2b6cb0;
+  border-color: #2b6cb0;
+}
+
+.checkIcon {
+  color: #ffffff;
+}

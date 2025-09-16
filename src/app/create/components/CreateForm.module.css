@@ -1,0 +1,254 @@
+.formContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  gap: 48px;
+}
+
+.formWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 48px;
+}
+
+.description {
+  color: #a0aec0;
+  margin-bottom: 24px;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #2d3748;
+  color: #ffffff;
+  border-radius: 12px;
+  border: none;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2b6cb0;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.emojiInput {
+  font-size: 1.875rem;
+}
+
+.summary {
+  background-color: #2d3748;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.summaryTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.summary p {
+    color: #a0aec0;
+}
+
+.summary p strong {
+    color: #63b3ed;
+}
+
+.previewPane {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .previewPane {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background-color: #1a202c;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.previewWindow {
+  width: 100%;
+  height: 100%;
+  background-color: #2d3748;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.windowButtons {
+    display: flex;
+    gap: 8px;
+}
+
+.windowButton {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.windowButton:nth-child(1) {
+  background-color: #ef4444;
+}
+.windowButton:nth-child(2) {
+  background-color: #f59e0b;
+}
+.windowButton:nth-child(3) {
+  background-color: #10b981;
+}
+
+.previewUrlBar {
+  flex: 1;
+  margin-left: 16px;
+  padding: 4px 16px;
+  background-color: #4a5568;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #a0aec0;
+  text-align: center;
+}
+
+.externalIcon {
+  color: #a0aec0;
+  font-size: 0.875rem;
+  margin-left: 8px;
+}
+
+.previewContent {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+}
+
+.previewText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.previewTitle {
+  color: #ffffff;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 96px;
+}
+
+.previewSubtitle {
+  color: #a0aec0;
+  font-size: 0.875rem;
+}
+
+.previewFooter {
+  flex-shrink: 0;
+  margin-top: auto;
+  color: #a0aec0;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.emojiInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.emojiInput {
+  padding-right: 50px;
+}
+
+.emojiPickerButton {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 48px;
+  border: none;
+  background-color: #4a5568;
+  color: #cbd5e0;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.emojiPickerButton:hover {
+  background-color: #2d3748;
+}
+
+.emojiPickerWrapper {
+  margin-top: 16px;
+}
+
+.fileInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileInputLabel {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a5568;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-weight: 500;
+}
+
+.fileInputLabel:hover {
+  background-color: #2d3748;
+}
+
+.fileName {
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+
+.iconInputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 16px;
+  color: #a0aec0;
+  font-size: 1.2rem;
+}
+
+.inputWithIcon {
+  padding-left: 48px;
+}
+
+.inputIcon.fa-youtube {
+    color: #ff0000;
+}

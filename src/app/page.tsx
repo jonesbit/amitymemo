@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import PricingSection from '@/components/PricingSection';
 import FaqSection from '@/components/FaqSection';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +14,7 @@ export default function Home() {
             <h1>Faça algo diferente.</h1>
             <h2 className="gradient-text">Transforme sentimentos em lembranças eternas.</h2>
             <p>No AmityMemo, cada data especial se torna uma página digital viva, repleta de suas fotos, vídeos e mensagens mais queridas.<br /><br />Crie, personalize e presenteie com um elo inquebrável de afeto.<br /><br /></p>
-            <a href="#planos" className="btn-primary">Criar Minha Memória Agora</a>
+            <Link href="/create" className="btn-primary">Criar Minha Memória Agora</Link>
             <div className="social-proof">
               <div className="user-avatars">
                 <Image src="https://i.pravatar.cc/40?img=1" alt="Usuário 1" width={35} height={35} />
@@ -34,7 +35,7 @@ export default function Home() {
           <div className="steps-header">
             <h2>Criar sua memória AmityMemo é fácil e rápido!</h2>
             <p>Surpreenda quem você ama com uma lembrança digital que aquece o coração. Em apenas 4 passos, sua história ganha vida.</p>
-            <a href="#planos" className="btn-secondary">Começar a eternizar!</a>
+            <Link href="/create" className="btn-secondary">Começar a eternizar!</Link>
           </div>
           <div className="steps-grid">
             <div className="step-card">

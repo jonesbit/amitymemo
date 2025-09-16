@@ -1,23 +1,37 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   return (
     <footer className="footer">
-      <div className="container pre-footer">
-        <h3>Precisa de ajuda? Fale conosco!</h3>
-        <a href="#" className="instagram-btn" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} /> Fale conosco no Instagram
-        </a>
-      </div>
+      {isHomePage && (
+        <div className="container pre-footer">
+          <h3>Precisa de ajuda? Fale conosco!</h3>
+          <a href="#" className="instagram-btn" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} /> Fale conosco no Instagram
+          </a>
+        </div>
+      )}
       <div className="main-footer-bg">
         <div className="container footer-container">
           <div className="footer-about">
             <Link href="/" className="logo-link">
-              <Image src="/img/logo.png" alt="AmityMemo Logo" className="footer-logo" width={180} height={45} />
+              <Image 
+                src="/img/logo.png" 
+                alt="AmityMemo Logo" 
+                className="footer-logo" 
+                width={180} 
+                height={45} 
+              />
             </Link>
             <p>AmityMemo: A plataforma perfeita para criar e eternizar lembranças digitais únicas para quem você mais ama.</p>
           </div>
@@ -46,11 +60,14 @@ const Footer = () => {
             <span className="cnpj">CNPJ: 00.000.000/0001-00</span>
           </p>
           <p className="site-by">
-            Feito com ❤️ por 
-            <Link href="https://elvros.com" passHref legacyBehavior>
-              <a className="nomeElvros" target="_blank" rel="noopener noreferrer">
-                Elvros
-              </a>
+            Feito com ❤️ por
+            <Link
+              href="https://elvros.com"
+              className="nomeElvros"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+               Elvros
             </Link>
           </p>
           <a href="#hero" className="back-to-top">Voltar ao topo <FontAwesomeIcon icon={faArrowUp} /></a>
