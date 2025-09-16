@@ -31,7 +31,7 @@ export default function CreateForm() {
   const [currentStep, setCurrentStep] = useState(1);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
-  const [savedProgress, setSavedProgress] = useState<any>(null);
+  const [savedProgress, setSavedProgress] = useState<{ progress: number; data: FormData } | null>(null);
   const [formData, setFormData] = useState<FormData>({
     urlName: "",
     pageTitle: "",
@@ -270,7 +270,7 @@ export default function CreateForm() {
         return (
             <>
                 <p className={styles.description}>
-                Seu resumo está pronto! Clique em "Próximo" para prosseguir para o
+                Seu resumo está pronto! Clique em &quot;Próximo&quot; para prosseguir para o
                 pagamento e finalizar a criação da sua página.
                 </p>
                 <div className={styles.summary}>

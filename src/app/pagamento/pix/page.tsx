@@ -4,11 +4,11 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart, faTag, faInfinity, faChevronDown, faCreditCard, faCheckCircle, faSpinner, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart, faTag, faInfinity, faChevronDown, faCreditCard, faCheckCircle, faSpinner, faArrowLeft, faBarcode } from '@fortawesome/free-solid-svg-icons';
 import { faCcVisa, faCcMastercard, faPix } from '@fortawesome/free-brands-svg-icons';
 import styles from './page.module.css';
 
-import { loadStripe, StripeElementsOptions } from '@stripe/stripe-js';
+import { loadStripe, Stripe, StripeElementsOptions } from '@stripe/stripe-js';
 import { Elements, PaymentElement, useStripe, useElements } from '@stripe/react-stripe-js';
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
@@ -31,7 +31,7 @@ const CheckoutForm = () => {
             },
         });
 
-        if (error.type === "card_error" || error.type === "validation_error") {
+        if (error?.type === "card_error" || error?.type === "validation_error") {
             setMessage(error.message || "Ocorreu um erro desconhecido.");
         } else {
             setMessage("Um erro inesperado ocorreu.");
@@ -100,9 +100,9 @@ const PagamentoPage = () => {
             if (data.clientSecret) {
                 router.push(`/pagamento/pix?cs=${data.clientSecret}`);
             }
-        } catch (error: any) {
+        } catch (error) {
             console.error("Erro ao tentar gerar PIX:", error);
-            setErrorMessage(error.message);
+            setErrorMessage(error instanceof Error ? error.message : "Ocorreu um erro inesperado.");
         } finally {
             setIsLoadingPix(false);
         }

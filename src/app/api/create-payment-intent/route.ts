@@ -44,9 +44,9 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ error: 'Método de pagamento inválido.' }, { status: 400 });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("ERRO NA API DO STRIPE:", error);
-    const errorMessage = error.message || "Ocorreu um erro interno no servidor.";
+    const errorMessage = error instanceof Error ? error.message : "Ocorreu um erro interno no servidor.";
     return new NextResponse(JSON.stringify({ error: errorMessage }), { 
         status: 400,
         headers: { 'Content-Type': 'application/json' }
